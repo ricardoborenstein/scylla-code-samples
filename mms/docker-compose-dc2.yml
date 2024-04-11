@@ -6,6 +6,8 @@ services:
     container_name: scylla-node4
     image: scylladb/scylla-enterprise:2024.1.0
     restart: always
+    environment:
+      REACTOR_BACKEND: "epoll"
     command: --seeds=scylla-node1,scylla-node4 --smp 1 --memory 750M --overprovisioned 1 --api-address 0.0.0.0
     volumes:
       - "./scylla/scylla.yaml:/etc/scylla/scylla.yaml"
