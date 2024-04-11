@@ -4,7 +4,7 @@ services:
 
   scylla-node1:
     container_name: scylla-node1
-    image: scylladb/scylla-enterprise:2024.1.0
+    image: scylladb/scylla-enterprise:2024.1.2
     restart: always
     environment:
       REACTOR_BACKEND: "epoll"
@@ -18,7 +18,7 @@ services:
 
   scylla-node2:
     container_name: scylla-node2
-    image: scylladb/scylla-enterprise:2024.1.0
+    image: scylladb/scylla-enterprise:2024.1.2
     environment:
       REACTOR_BACKEND: "epoll"
     restart: always
@@ -31,7 +31,7 @@ services:
 
   scylla-node3:
     container_name: scylla-node3
-    image: scylladb/scylla-enterprise:2024.1.0
+    image: scylladb/scylla-enterprise:2024.1.2
     environment:
       REACTOR_BACKEND: "epoll"
     restart: always
