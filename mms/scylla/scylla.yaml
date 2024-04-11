@@ -28,7 +28,7 @@ api_port: 10000
 api_address: 127.0.0.1
 batch_size_warn_threshold_in_kb: 128
 batch_size_fail_threshold_in_kb: 1024
- 
+cluster_name: 'Raft'
 partitioner: org.apache.cassandra.dht.Murmur3Partitioner
 commitlog_total_space_in_mb: -1
 murmur3_partitioner_ignore_msb_bits: 12
